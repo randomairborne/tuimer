@@ -1,0 +1,8 @@
+[package]
+name = "tuimer"
+version = "0.1.0"
+edition = "2021"
+authors = ["valkyrie_pilot <valk@randomairborne.dev>"]
+
+[dependencies]
+tokio = { version = "1", features = ["rt-multi-thread", "fs", "macros", "time"]}
