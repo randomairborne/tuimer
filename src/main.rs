@@ -28,7 +28,7 @@ fn main() {
         let seconds = time % 60;
         let minutes = (time / 60) % 60;
         let hours = time / 3600;
-        print!("{:02}:{:02}:{:02}\r", hours, minutes, seconds,);
+        print!("\r{:02}:{:02}:{:02}", hours, minutes, seconds,);
         std::io::stdout().flush().unwrap();
         time += 1;
         std::fs::write(&path, time.to_string()).ok();
